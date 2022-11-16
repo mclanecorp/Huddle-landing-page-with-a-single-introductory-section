@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Overpass&family=Poppins:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Open+Sans&family=Overpass&family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  /* ### Primary */
+
+  --Violet: hsl(257, 40%, 49%);
+  --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: url(./images/bg-desktop.svg);
+  background-color: var(--Violet);
+}
+header {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+main {
+  display: flex;
+  padding: 0 50px;
+}
+.container-register {
+  width: 550px;
+  display: flex;
+  padding-top: 40px;
+  padding-left: 50px;
+  flex-direction: column;
+}
+.img img {
+  width: 100%;
+}
+.container-register h1 {
+  color: white;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+.container-register p {
+  color: white;
+  font-family: Open Sans;
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+
+.container-register a {
+  text-decoration: none;
+  background-color: white;
+  padding: 10px 50px;
+  border-radius: 20px;
+  text-align: center;
+  font-family: Open sans;
+  color: var(--Violet);
+  cursor: pointer;
+}
+
+.container-register a:hover {
+  background-color: var(--SoftMagenta);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 30px;
+  cursor: pointer;
+  margin-right: 200px;
+  margin-top: 30px;
+}
+
+ion-icon {
+  font-size: 32px;
+  color: white;
+  margin-left: 10px;
+}
+
+ion-icon:hover {
+  fill: var(--SoftMagenta);
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Violet);
+    height: auto;
+  }
+  main {
+    height: auto;
+    padding: 0 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-register {
+    width: 350px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .container-register h1 {
+    font-weight: 600;
+    font-size: 1.875rem;
+    margin-bottom: 20px;
+  }
+  .container-register p {
+    margin-bottom: 40px;
+    width: 300px;
+  }
+  .container-register a {
+    padding: 10px 90px;
+  }
+  footer {
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+}
